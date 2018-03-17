@@ -194,10 +194,12 @@ public class playerController : gameEntity
         if(pause)
         {
             pauseMenu.gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
         else if(!pause)
         {
             pauseMenu.gameObject.SetActive(false);
+            Time.timeScale = 1;
         }
 
 
@@ -274,8 +276,10 @@ public class playerController : gameEntity
 
         if (entityHealth <= 0)
         {
+            Destroy(gameObject);
             Debug.Log("Game over");
             gameOver.gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
 
 

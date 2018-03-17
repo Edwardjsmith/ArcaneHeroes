@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using state;
 
 
@@ -20,6 +21,8 @@ public class BossAI : baseAI
 
     private GameObject[] boulderSpawn;
     public GameObject boulder;
+
+    public Image playerVictory;
 
     public GameObject projectileCheck;
     public GameObject projectileCheckTop;
@@ -58,6 +61,7 @@ public class BossAI : baseAI
         changeTypeTimer = 15.0f;
         jumpForce = 800;
         entityHealth = 5;
+        playerVictory.gameObject.SetActive(false);
 
     }
     public override void Update()
@@ -65,8 +69,10 @@ public class BossAI : baseAI
 
         if(entityHealth <= 0)
         {
-            changeScene.staticChange(0);
+            
+            playerVictory.gameObject.SetActive(true);
         }
+
         base.Update();
 
         changeTypeTimer -= Time.deltaTime;
