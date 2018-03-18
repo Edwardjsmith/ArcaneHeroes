@@ -29946,7 +29946,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1961300522872186, guid: 7f9ccb231e6e7d84687849d79219c03d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224256860328369818, guid: 7f9ccb231e6e7d84687849d79219c03d,
         type: 2}
@@ -29983,6 +29983,26 @@ Prefab:
       value: 
       objectReference: {fileID: 1461464268}
     - target: {fileID: 114792429659098182, guid: 7f9ccb231e6e7d84687849d79219c03d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: change
+      objectReference: {fileID: 0}
+    - target: {fileID: 114478799882788642, guid: 7f9ccb231e6e7d84687849d79219c03d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1461464268}
+    - target: {fileID: 114478799882788642, guid: 7f9ccb231e6e7d84687849d79219c03d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: reloadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719871990491288, guid: 7f9ccb231e6e7d84687849d79219c03d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1461464268}
+    - target: {fileID: 114719871990491288, guid: 7f9ccb231e6e7d84687849d79219c03d,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: change
@@ -30037,6 +30057,16 @@ GameObject:
 --- !u!1 &1594545439 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1182309336292344, guid: 7f9ccb231e6e7d84687849d79219c03d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1594545430}
+--- !u!1 &1594545440 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1980249164774892, guid: 7f9ccb231e6e7d84687849d79219c03d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1594545430}
+--- !u!1 &1594545441 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1225891659692288, guid: 7f9ccb231e6e7d84687849d79219c03d,
     type: 2}
   m_PrefabInternal: {fileID: 1594545430}
 --- !u!1001 &1595538951
@@ -31797,6 +31827,21 @@ Prefab:
       propertyPath: powerUpTimerBar
       value: 
       objectReference: {fileID: 1594545431}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 1028308811}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 1594545441}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: gameOverButton
+      value: 
+      objectReference: {fileID: 1594545440}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 450c3f35a58dd2445b5510665d9703ea, type: 2}
   m_IsPrefabParent: 0

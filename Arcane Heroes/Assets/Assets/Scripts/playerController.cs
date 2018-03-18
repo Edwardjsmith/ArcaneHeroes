@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class playerController : gameEntity
 {
-  
 
+    public EventSystem eventSystem;
+    public GameObject pauseButton;
+    public GameObject gameOverButton;
     public GameObject[] life;
     //Everything concerning movement and jumping
     public GameObject openDoor;
@@ -76,7 +79,7 @@ public class playerController : gameEntity
         spellSelect = 0;
         changeSpell(spellSelect);
 
-        entityHealth = 5;
+        entityHealth = 1;
 
         switchDelay = 0;
         
@@ -117,15 +120,23 @@ public class playerController : gameEntity
         
         var horizontal = Input.GetAxis("Horizontal");
 
-        if (horizontal < 0 && grounded)
+        if (horizontal < 0)
         {
             facingRight = false;
-            anim.speed = 0.5f;
+
+            if (grounded)
+            {
+                anim.speed = 0.5f;
+            }
         }
-        else if (horizontal > 0 && grounded)
+        else if (horizontal > 0)
         {
             facingRight = true;
-            anim.speed = 0.5f;
+            if (grounded)
+            {
+                anim.speed = 0.5f;
+            }
+            
 
         }
         else
@@ -208,7 +219,12 @@ public class playerController : gameEntity
         if(pause)
         {
             pauseMenu.gameObject.SetActive(true);
+            walkingSound.SetActive(false);
             Time.timeScale = 0;
+            if (pauseButton != null)
+            {
+                eventSystem.SetSelectedGameObject(pauseButton);
+            }
         }
         else if(!pause)
         {
@@ -227,7 +243,7 @@ public class playerController : gameEntity
         manageHealth();
 
         //Movement, jumping and attacking
-        if (!pause || gameOver.gameObject.activeSelf != true)
+        if (!pause)
         {
             if (knockBackCount <= 0)
             {
@@ -290,10 +306,14 @@ public class playerController : gameEntity
 
         if (entityHealth <= 0)
         {
-            Destroy(gameObject);
+            
             Debug.Log("Game over");
             gameOver.gameObject.SetActive(true);
             Time.timeScale = 0;
+            if (gameOverButton != null)
+            {
+                eventSystem.SetSelectedGameObject(gameOverButton);
+            }
         }
 
 
