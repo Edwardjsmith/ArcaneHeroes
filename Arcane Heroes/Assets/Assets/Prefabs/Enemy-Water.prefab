@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 95468461801337450}
   - component: {fileID: 61039383491330276}
   - component: {fileID: 114724303894561576}
+  - component: {fileID: 82612835665227838}
   m_Layer: 0
   m_Name: Enemy-Water
   m_TagString: waterEnemy
@@ -172,6 +173,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 37.85475, y: 50}
   m_EdgeRadius: 0
+--- !u!82 &82612835665227838
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175357630896552}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95468461801337450
 Animator:
   serializedVersion: 3
@@ -214,7 +295,7 @@ MonoBehaviour:
   jumpForce: 0
   movementSpeed: 0
   Spells:
-  - {fileID: 1938602212581226, guid: 8bd523b05ac36cc4583f484c556b3bb7, type: 2}
+  - {fileID: 0}
   staff: {fileID: 1306036037102718}
   entityHealth: 0
   showSpell: 0
@@ -222,6 +303,7 @@ MonoBehaviour:
   facingRight: 0
   anim: {fileID: 0}
   sprite: {fileID: 0}
+  enemyRawr: {fileID: 0}
   spotted: 0
   currentState: 0
   lineOfSight: {fileID: 1322787742487410}

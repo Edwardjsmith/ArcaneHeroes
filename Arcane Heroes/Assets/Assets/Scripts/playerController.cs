@@ -348,7 +348,11 @@ public class playerController : gameEntity
         {
             changeScene.staticChange(gameManager.scene += 1);
         }
-        if(collision.transform.tag == "Hazard" || collision.transform.tag == "Enemy" || collision.transform.tag == "enemyProjectile")
+        if (collision.transform.tag == "ExitTut")
+        {
+            changeScene.staticChange(gameManager.scene += 1);
+        }
+        if (collision.transform.tag == "Hazard" || collision.transform.tag == "Enemy" || collision.transform.tag == "enemyProjectile")
         {
             damage();
             knockBackCount = knockBackLength;
