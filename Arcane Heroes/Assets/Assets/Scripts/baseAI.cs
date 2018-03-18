@@ -4,8 +4,9 @@ using UnityEngine;
 using state;
 
 public class baseAI : gameEntity {
-   
 
+    public AudioClip enemyRawr;
+ 
     public enum AIState
     {
         idle,
@@ -31,6 +32,8 @@ public class baseAI : gameEntity {
         player = GameObject.FindGameObjectWithTag("Player");
         //spawn.transform.position = transform.position;
         spotted = false;
+
+      
 
     }
 
