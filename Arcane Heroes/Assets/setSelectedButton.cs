@@ -1,27 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
+using UnityEngine.EventSystems;
 
 public class setSelectedButton : MonoBehaviour {
 
-    public Button button;
+   
+    public GameObject selectedButton;
+    public EventSystem changeButton;
 
-
-
-	// Use this for initialization
-
-	void Start ()
+    private void OnEnable()
     {
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-		if(button.enabled)
+        if (selectedButton.activeSelf == true)
         {
-            button.Select();
+            changeButton.SetSelectedGameObject(selectedButton);
         }
-	}
+    }
+
 }

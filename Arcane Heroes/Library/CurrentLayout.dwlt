@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 342}
   m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
-  controlID: 23
+  controlID: 32
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 342}
   m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 24
+  controlID: 33
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 25
+  controlID: 34
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -441,9 +441,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 861.14276
+    m_Target: 1377.8184
     speed: 2
-    m_Value: 861.14276
+    m_Value: 1377.8184
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -518,19 +518,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\EdwardSmith\Documents\GitHub\Arcaneheroes\Arcane Heroes
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: 7c2d0000
-    m_LastClickedID: 11644
-    m_ExpandedIDs: 000000007c2d0000dc2d0000f02e0000202f0000b62f0000c22f000002300000083000003a300000483000004a300000c8300000e030000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 647}
+    m_SelectedIDs: 3a2a0000
+    m_LastClickedID: 10810
+    m_ExpandedIDs: 000000005a270000ca270000e62800001a290000ba290000c6290000102a0000182a00004a2a0000582a00005a2a0000022b00001a2b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -558,7 +558,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007c2d0000dc2d0000f02e0000202f0000b62f0000c22f000002300000083000003a300000483000004a300000c8300000e0300000
+    m_ExpandedIDs: 000000005a270000ca270000e62800001a290000ba290000c6290000102a0000182a00004a2a0000582a00005a2a0000022b00001a2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -583,9 +583,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: caedffff
-    m_LastClickedInstanceID: -4662
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: aa3b0000
+    m_LastClickedInstanceID: 15274
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300003cc5fdff06280000ac4e0000c22d00002c2d0000202d0000c82a000022290000ba360000da400000de4000008c2d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -639,7 +639,7 @@ MonoBehaviour:
     y: 100
     width: 321
     height: 734
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 322.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
@@ -674,9 +674,9 @@ MonoBehaviour:
     height: 447
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 40eeffff44eeffff58eeffffccf8ffff00000000
+    m_SelectedIDs: aa3b0000
+    m_LastClickedID: 15274
+    m_ExpandedIDs: 6ce5ffff1afcffff00000000a6390000d4390000fe390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -695,7 +695,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - TutorialLevel
+  - MainMenuScene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
