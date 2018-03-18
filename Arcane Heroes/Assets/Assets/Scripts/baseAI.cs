@@ -53,6 +53,11 @@ public class baseAI : gameEntity {
     {
         base.Update();
         
+        if(currentState == (int)AIState.chase)
+        {
+            enemyRawr.Play();
+        }
+
         if (entityHealth <= 0)
         {
             Destroy(gameObject);

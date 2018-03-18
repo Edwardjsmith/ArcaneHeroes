@@ -44,7 +44,7 @@ public class waterAI : baseAI
         {
             if (timer <= 0)
             {
-                Spells[spellSelect].SetActive(true);
+                Spells[0].SetActive(true);
 
 
 

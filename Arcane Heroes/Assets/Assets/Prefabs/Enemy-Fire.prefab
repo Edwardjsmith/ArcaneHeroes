@@ -361,7 +361,7 @@ MonoBehaviour:
   jumpForce: 600
   movementSpeed: 0
   Spells:
-  - {fileID: 1429270018663442, guid: 7f7efc6bcd661ef4398f5a1e6d32c9c3, type: 2}
+  - {fileID: 1890796194226960, guid: 7f7efc6bcd661ef4398f5a1e6d32c9c3, type: 2}
   staff: {fileID: 1603290061243040}
   entityHealth: 0
   showSpell: 0

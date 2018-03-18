@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4538510359749896}
   - component: {fileID: 114371459364077902}
   - component: {fileID: 58603802285150674}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1dba364faaa9ed14cafe1b396e33a0ab, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -295,7 +295,7 @@ MonoBehaviour:
   jumpForce: 0
   movementSpeed: 0
   Spells:
-  - {fileID: 0}
+  - {fileID: 1574350951664210, guid: 8bd523b05ac36cc4583f484c556b3bb7, type: 2}
   staff: {fileID: 1306036037102718}
   entityHealth: 0
   showSpell: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   facingRight: 0
   anim: {fileID: 0}
   sprite: {fileID: 0}
-  enemyRawr: {fileID: 0}
+  enemyRawr: {fileID: 82612835665227838}
   spotted: 0
   currentState: 0
   lineOfSight: {fileID: 1322787742487410}

@@ -20,6 +20,8 @@ public class playerController : gameEntity
     public int airOrb;
     public int key;
 
+    public GameObject walkingSound;
+
     float knockBackHazard;
     float knockBackLength;
     float knockBackCount;
@@ -101,6 +103,8 @@ public class playerController : gameEntity
         powerUpTimerBar.gameObject.SetActive(false);
 
         gameOver.gameObject.SetActive(false);
+
+        walkingSound.SetActive(false);
     }
 
 
@@ -113,12 +117,12 @@ public class playerController : gameEntity
         
         var horizontal = Input.GetAxis("Horizontal");
 
-        if (horizontal < 0)
+        if (horizontal < 0 && grounded)
         {
             facingRight = false;
             anim.speed = 0.5f;
         }
-        else if (horizontal > 0)
+        else if (horizontal > 0 && grounded)
         {
             facingRight = true;
             anim.speed = 0.5f;
@@ -127,8 +131,18 @@ public class playerController : gameEntity
         else
         {
             anim.speed = 0;
+            walkingSound.SetActive(false);
         }
         //anim.speed = 0;
+
+        if(grounded == true)
+        {
+            walkingSound.SetActive(true);
+        }
+        else
+        {
+            walkingSound.SetActive(false);
+        }
 
         rigid.velocity = (new Vector2(moveSpeed * horizontal * Time.deltaTime, rigid.velocity.y));
     }
@@ -346,11 +360,11 @@ public class playerController : gameEntity
     {
         if (collision.transform.tag == "Exit" && airOrb == 1 && fireOrb == 1 && waterOrb == 1 )
         {
-            changeScene.staticChange(gameManager.scene += 1);
+            changeScene.staticChange(gameManager.scene += 2);
         }
         if (collision.transform.tag == "ExitTut")
         {
-            changeScene.staticChange(gameManager.scene += 1);
+            changeScene.staticChange(gameManager.scene += 2);
         }
         if (collision.transform.tag == "Hazard" || collision.transform.tag == "Enemy" || collision.transform.tag == "enemyProjectile")
         {

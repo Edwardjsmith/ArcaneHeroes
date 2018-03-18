@@ -159,6 +159,7 @@
     <Compile Include="Assets\TutorialLevel\onColText.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Assets\Prefabs\sounds\walking_sounds\_readme_and_license.txt" />
     <None Include="Assets\Menus\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\Menus\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\Menus\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
@@ -179,7 +180,6 @@
     <None Include="Assets\Menus\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Menus\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Menus\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\sounds\walking_sounds\_readme_and_license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
