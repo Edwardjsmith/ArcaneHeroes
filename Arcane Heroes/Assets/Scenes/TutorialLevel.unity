@@ -30014,7 +30014,7 @@ Prefab:
     - target: {fileID: 224256860328369818, guid: 7f9ccb231e6e7d84687849d79219c03d,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -34.99994
+      value: -35
       objectReference: {fileID: 0}
     - target: {fileID: 1550706868771798, guid: 7f9ccb231e6e7d84687849d79219c03d, type: 2}
       propertyPath: m_IsActive
@@ -31932,6 +31932,11 @@ Prefab:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1594545433}
+    - target: {fileID: 82220494256822084, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 450c3f35a58dd2445b5510665d9703ea, type: 2}
   m_IsPrefabParent: 0

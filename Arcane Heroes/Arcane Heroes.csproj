@@ -179,6 +179,7 @@
     <None Include="Assets\Menus\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Menus\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Menus\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\sounds\10338__fantozzi__walksforgames\_readme_and_license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
