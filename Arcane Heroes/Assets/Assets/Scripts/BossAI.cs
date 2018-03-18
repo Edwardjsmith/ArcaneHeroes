@@ -112,7 +112,7 @@ public class BossAI : baseAI
 
             if (currentState == (int)AIState.chase)
             {
-                
+                enemyRawr.Play();
                 chase();
             }
 

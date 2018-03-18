@@ -5,7 +5,7 @@ using state;
 
 public class baseAI : gameEntity {
 
-    public AudioClip enemyRawr;
+    public AudioSource enemyRawr;
  
     public enum AIState
     {
