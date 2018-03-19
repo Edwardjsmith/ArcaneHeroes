@@ -150,6 +150,7 @@
     <Compile Include="Assets\Menus\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\Menus\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Menus\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\movePoint.cs" />
     <Compile Include="Assets\patrolAI.cs" />
     <Compile Include="Assets\pauseMenu.cs" />
     <Compile Include="Assets\selectOnDeath.cs" />

@@ -10,7 +10,6 @@ public class patrolAI : baseAI {
     int currentPatrolIndex;
 
     
-    
 
     
     
@@ -22,8 +21,8 @@ public class patrolAI : baseAI {
         currentPatrolPoint = patrolPath[currentPatrolIndex];
         entityHealth = 1;
 
-        
-       
+
+
     
     }
 	
@@ -116,6 +115,7 @@ public class patrolAI : baseAI {
 
     protected void patrol()
     {
+
         if (Vector3.Distance(transform.position, currentPatrolPoint.position) < 1.0f)
         {
             if (currentPatrolIndex + 1 < patrolPath.Length)
@@ -146,10 +146,8 @@ public class patrolAI : baseAI {
             facingRight = true;
 
         }
-     
 
-
-
+       
     }
 
    
