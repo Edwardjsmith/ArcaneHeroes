@@ -26059,6 +26059,28 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1174755799380422, guid: ece8fbb07af140b4581cf6289689d1bc, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175357630896552, guid: ece8fbb07af140b4581cf6289689d1bc, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175357630896552, guid: ece8fbb07af140b4581cf6289689d1bc, type: 2}
+      propertyPath: m_TagString
+      value: enemyWater
+      objectReference: {fileID: 0}
+    - target: {fileID: 61039383491330276, guid: ece8fbb07af140b4581cf6289689d1bc,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -3.841692
+      objectReference: {fileID: 0}
+    - target: {fileID: 61039383491330276, guid: ece8fbb07af140b4581cf6289689d1bc,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 18.096876
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ece8fbb07af140b4581cf6289689d1bc, type: 2}
   m_IsPrefabParent: 0
