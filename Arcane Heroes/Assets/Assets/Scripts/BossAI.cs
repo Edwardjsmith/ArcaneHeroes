@@ -60,7 +60,7 @@ public class BossAI : baseAI
 
         changeTypeTimer = 15.0f;
         jumpForce = 800;
-        entityHealth = 5;
+        entityHealth = 10;
         playerVictory.gameObject.SetActive(false);
 
     }
@@ -83,14 +83,17 @@ public class BossAI : baseAI
             if(bossChangeType == 0)
             {
                 bossType = "enemyAir";
+                gameObject.GetComponent<SpriteRenderer>().color = Color.gray;
             }
             else if(bossChangeType == 1)
             {
                 bossType = "enemyFire";
+                gameObject.GetComponent<SpriteRenderer>().color = Color.red;
             }
             else if(bossChangeType == 2)
             {
                 bossType = "enemyWater";
+                gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
             }
             
             Debug.Log("Changed to " + bossType);

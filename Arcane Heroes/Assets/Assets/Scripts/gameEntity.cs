@@ -43,10 +43,7 @@ public class gameEntity : MonoBehaviour
     protected float rotateLeft;
     protected float rotateRight;
 
-    bool entityFlash;
-    float flashLength = 1;
-    float flashCounter;
-
+  
   
     protected Vector3 newScale;
     // Use this for initialization
@@ -67,7 +64,7 @@ public class gameEntity : MonoBehaviour
 
         entityRenderer = gameObject.GetComponent<SpriteRenderer>();
 
-        entityFlash = false;
+       
     }
 
     // Update is called once per frame
@@ -75,7 +72,7 @@ public class gameEntity : MonoBehaviour
     {
         damageTimer -= Time.deltaTime;
         timer -= Time.deltaTime;
-        flashCounter -= Time.deltaTime;
+      
     }
 
  
@@ -117,27 +114,11 @@ public class gameEntity : MonoBehaviour
 
     IEnumerator spriteFlash()
     {
-        /*if (flashCounter > flashLength * 0.66f)
-        {
-            entityRenderer.color = new Color(entityRenderer.color.r, entityRenderer.color.g, entityRenderer.color.b, 0f);
-        }
-        else if (flashCounter > flashLength * 0.33f)
-        {
-            entityRenderer.color = new Color(entityRenderer.color.r, entityRenderer.color.g, entityRenderer.color.b, 1f);
-        }
-        else if (flashCounter > 0)
-        {
-            entityRenderer.color = new Color(entityRenderer.color.r, entityRenderer.color.g, entityRenderer.color.b, 0f);
-        }
-        else
-        {
-            entityRenderer.color = new Color(entityRenderer.color.r, entityRenderer.color.g, entityRenderer.color.b, 1f);
-            entityFlash = false;
-        }*/
+      
 
         for (float i = 0; i < 9.0f; i++)
         {
-            entityRenderer.color = new Color(1f, 1f, 1f, 0.3f);
+            entityRenderer.color = new Color(entityRenderer.color.r, entityRenderer.color.g, entityRenderer.color.b, 0.3f);
             yield return new WaitForSeconds(.1f);
             entityRenderer.color = Color.white; 
             yield return new WaitForSeconds(.1f);
