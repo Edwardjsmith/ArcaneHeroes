@@ -5,7 +5,8 @@ using UnityEngine;
 public class gameEntity : MonoBehaviour
 {
     protected float timer;
-    
+
+    private SpriteRenderer entityRenderer;
 
     protected float projectileSpeed;
 
@@ -16,7 +17,6 @@ public class gameEntity : MonoBehaviour
 
     protected float damageTimer;
 
-    
   
     public int entityHealth;
 
@@ -43,7 +43,11 @@ public class gameEntity : MonoBehaviour
     protected float rotateLeft;
     protected float rotateRight;
 
+    bool entityFlash;
+    float flashLength = 1;
+    float flashCounter;
 
+  
     protected Vector3 newScale;
     // Use this for initialization
     virtual public void Start()
@@ -56,12 +60,14 @@ public class gameEntity : MonoBehaviour
         rotateLeft = -transform.localScale.x;
         rotateRight = transform.localScale.x;
         whatIsGround = LayerMask.GetMask("Default");
-       
-       
-       
-        groundCheck = GameObject.FindGameObjectWithTag("groundCheck");
+
 
         
+        groundCheck = GameObject.FindGameObjectWithTag("groundCheck");
+
+        entityRenderer = gameObject.GetComponent<SpriteRenderer>();
+
+        entityFlash = false;
     }
 
     // Update is called once per frame
@@ -69,7 +75,7 @@ public class gameEntity : MonoBehaviour
     {
         damageTimer -= Time.deltaTime;
         timer -= Time.deltaTime;
-        
+        flashCounter -= Time.deltaTime;
     }
 
  
@@ -109,13 +115,50 @@ public class gameEntity : MonoBehaviour
 
     }
 
+    IEnumerator spriteFlash()
+    {
+        /*if (flashCounter > flashLength * 0.66f)
+        {
+            entityRenderer.color = new Color(entityRenderer.color.r, entityRenderer.color.g, entityRenderer.color.b, 0f);
+        }
+        else if (flashCounter > flashLength * 0.33f)
+        {
+            entityRenderer.color = new Color(entityRenderer.color.r, entityRenderer.color.g, entityRenderer.color.b, 1f);
+        }
+        else if (flashCounter > 0)
+        {
+            entityRenderer.color = new Color(entityRenderer.color.r, entityRenderer.color.g, entityRenderer.color.b, 0f);
+        }
+        else
+        {
+            entityRenderer.color = new Color(entityRenderer.color.r, entityRenderer.color.g, entityRenderer.color.b, 1f);
+            entityFlash = false;
+        }*/
+
+        for (float i = 0; i < 9.0f; i++)
+        {
+            entityRenderer.color = new Color(1f, 1f, 1f, 0.3f);
+            yield return new WaitForSeconds(.1f);
+            entityRenderer.color = Color.white; 
+            yield return new WaitForSeconds(.1f);
+        }
+
+
+    }
+
+
     public void damage()
     {
+       
+
         if (damageTimer <= 0)
         {
             entityHealth--;
             damageTimer = 3.0f;
+            StartCoroutine("spriteFlash");
         }
+        
+        
 
     }
     public void fire(GameObject spell, Transform pos)

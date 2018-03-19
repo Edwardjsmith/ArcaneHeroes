@@ -79,7 +79,7 @@ public class playerController : gameEntity
         spellSelect = 0;
         changeSpell(spellSelect);
 
-        entityHealth = 1;
+        entityHealth = 5;
 
         switchDelay = 0;
         
@@ -369,7 +369,7 @@ public class playerController : gameEntity
         rigid.velocity = (new Vector2(0, 0));
       
        
-       rigid.AddForce(new Vector2(knockBackDirection.x - knockBackPower * 10, knockBackDirection.y + knockBackPower));
+       rigid.AddForce(new Vector2(0, knockBackDirection.y + knockBackPower / 2));
        
       
 
