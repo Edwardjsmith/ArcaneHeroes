@@ -1332,26 +1332,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &789925997 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1385870091812568, guid: 450c3f35a58dd2445b5510665d9703ea,
-    type: 2}
-  m_PrefabInternal: {fileID: 1740050454}
---- !u!58 &789926004
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 789925997}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.44471288, y: -2.445921}
-  serializedVersion: 2
-  m_Radius: 0.29436612
 --- !u!1 &859566019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3634,8 +3614,8 @@ MonoBehaviour:
   jumpForce: 550
   movementSpeed: 20
   Spells:
-  - {fileID: 1429270018663442, guid: 7f7efc6bcd661ef4398f5a1e6d32c9c3, type: 2}
-  - {fileID: 1432360838168064, guid: 8bd523b05ac36cc4583f484c556b3bb7, type: 2}
+  - {fileID: 1890796194226960, guid: 7f7efc6bcd661ef4398f5a1e6d32c9c3, type: 2}
+  - {fileID: 1574350951664210, guid: 8bd523b05ac36cc4583f484c556b3bb7, type: 2}
   staff: {fileID: 1166502602}
   entityHealth: 5
   showSpell: 0
@@ -4017,6 +3997,79 @@ Prefab:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1252811040}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 1997887990}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: life.Array.data[0]
+      value: 
+      objectReference: {fileID: 1136460887}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: life.Array.data[1]
+      value: 
+      objectReference: {fileID: 1267034649}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: life.Array.data[2]
+      value: 
+      objectReference: {fileID: 350958893}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: life.Array.data[3]
+      value: 
+      objectReference: {fileID: 1685563096}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: life.Array.data[4]
+      value: 
+      objectReference: {fileID: 1355489129}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1252811040}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 998370929}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: mana
+      value: 
+      objectReference: {fileID: 1158894679}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: powerUpTimerBar
+      value: 
+      objectReference: {fileID: 859566021}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 1866869228}
+    - target: {fileID: 114640175436450538, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: gameOverButton
+      value: 
+      objectReference: {fileID: 396678894}
+    - target: {fileID: 82109673799382216, guid: 450c3f35a58dd2445b5510665d9703ea,
+        type: 2}
+      propertyPath: MinDistance
+      value: 15.34697
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078538785250160, guid: 450c3f35a58dd2445b5510665d9703ea, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -15.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078538785250160, guid: 450c3f35a58dd2445b5510665d9703ea, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 450c3f35a58dd2445b5510665d9703ea, type: 2}
   m_IsPrefabParent: 0

@@ -35,6 +35,7 @@ TagManager:
   - enemyWater
   - waterEnemy
   - ExitTut
+  - ExitLevel1
   layers:
   - Default
   - TransparentFX

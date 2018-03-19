@@ -376,15 +376,26 @@ public class playerController : gameEntity
         yield return 0;
         
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Door" && key == 1)
+        {
+            Instantiate(openDoor, collision.gameObject.transform);
+            Destroy(collision.gameObject);
+            key--;
+            hasKey.SetActive(false);
+
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Exit" && airOrb == 1 && fireOrb == 1 && waterOrb == 1 )
+        if (collision.transform.tag == "ExitLevel1" && airOrb == 1 && fireOrb == 1 && waterOrb == 1 )
         {
-            changeScene.staticChange(gameManager.scene += 2);
+            changeScene.staticChange(3);
         }
         if (collision.transform.tag == "ExitTut")
         {
-            changeScene.staticChange(gameManager.scene += 2);
+            changeScene.staticChange(2);
         }
         if (collision.transform.tag == "Hazard" || collision.transform.tag == "Enemy" || collision.transform.tag == "enemyProjectile")
         {
@@ -408,15 +419,8 @@ public class playerController : gameEntity
             hasKey.SetActive(true);
 
         }
-
-        if (collision.transform.tag == "Door" && key == 1)
-        {
-            Instantiate(openDoor, collision.gameObject.transform);
-            Destroy(collision.gameObject);
-            key--;
-            hasKey.SetActive(false);
-
-        }
+        
+      
         if (collision.transform.tag == "OrbOfWater")
         {
             Destroy(collision.gameObject);
